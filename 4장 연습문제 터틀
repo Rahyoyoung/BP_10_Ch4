@@ -1,0 +1,67 @@
+7번
+import turtle
+t = turtle.Turtle()
+t.shape("turtle")
+
+a=[]
+
+color1 = input("색상 #1을 입력하시오 : ")
+a.append(color1)
+color2 = input("색상 #2을 입력하시오 : ")
+a.append(color2)
+color3 = input("색상 #3을 입력하시오 : ")
+a.append(color3)
+
+t.fillcolor(a[0]) #예제에 나온거 반복
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+t.up()
+t.fd(100) #위치 변경
+t.down()
+
+t.fillcolor(a[1]) #예제에 나온거 반복
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+t.up()
+t.fd(100) #위치 변경
+t.down()
+
+t.fillcolor(a[2]) #예제에 나온거 반복
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+turtle.mainloop()
+
+8번
+import turtle
+t = turtle.Turtle()
+t.shape("turtle")
+
+a=[]
+b=[]
+
+x1=int(input("x1 : "))
+a.append(x1)
+y1=int(input("y1 : "))
+b.append(y1)
+
+x2=int(input("x2 : "))
+a.append(x2)
+y2=int(input("y2 : "))
+b.append(y2)
+
+x3=int(input("x3 : "))
+a.append(x3)
+y3=int(input("y3 : "))
+b.append(y3)
+
+t.goto(a[0], b[0])
+t.goto(a[1], b[1])
+t.goto(a[2], b[2])
+
+turtle.mainloop()
